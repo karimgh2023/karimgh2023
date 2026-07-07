@@ -28,19 +28,41 @@ Bachelor's in Computer Systems Development from **ISET Mahdia**.
 
 ## GitHub Stats
 
-<!-- Replace src with your github-readme-stats URL -->
-<p align="center">
-  <img src="" alt="GitHub Stats" />
-</p>
+<div align="center">
+  <table>
+    <tr>
+      <td valign="top" width="50%">
+        <a href="https://github.com/karimgh2023">
+          <img
+            src="https://github-readme-stats.vercel.app/api?username=karimgh2023&show_icons=true&theme=tokyonight&hide_border=true"
+            alt="GitHub Stats"
+          />
+        </a>
+      </td>
+      <td valign="top" width="50%">
+        <a href="https://github.com/karimgh2023">
+          <img
+            src="https://github-readme-stats.vercel.app/api/top-langs/?username=karimgh2023&theme=tokyonight&hide_border=true&layout=compact"
+            alt="Top Languages"
+          />
+        </a>
+      </td>
+    </tr>
+  </table>
+</div>
 
 ---
 
 ## Streak
 
-<!-- Replace src with your github-readme-streak-stats URL -->
-<p align="center">
-  <img src="" alt="GitHub Streak" />
-</p>
+<div align="center">
+  <a href="https://github.com/karimgh2023">
+    <img
+      src="https://github-readme-streak-stats.herokuapp.com/?user=karimgh2023&theme=tokyonight&hide_border=true"
+      alt="GitHub Streak"
+    />
+  </a>
+</div>
 
 ---
 
