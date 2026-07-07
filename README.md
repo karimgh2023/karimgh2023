@@ -33,18 +33,20 @@ Bachelor's in Computer Systems Development from **ISET Mahdia**.
     <tr>
       <td valign="top" width="50%">
         <a href="https://github.com/karimgh2023">
-          <img
-            src="https://github-readme-stats.vercel.app/api?username=karimgh2023&show_icons=true&theme=tokyonight&hide_border=true"
-            alt="GitHub Stats"
-          />
+          <picture>
+            <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/karimgh2023/karimgh2023/output/stats-card-dark.svg" />
+            <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/karimgh2023/karimgh2023/output/stats-card-light.svg" />
+            <img src="https://raw.githubusercontent.com/karimgh2023/karimgh2023/output/stats-card-dark.svg" alt="GitHub Stats" />
+          </picture>
         </a>
       </td>
       <td valign="top" width="50%">
         <a href="https://github.com/karimgh2023">
-          <img
-            src="https://github-readme-stats.vercel.app/api/top-langs/?username=karimgh2023&theme=tokyonight&hide_border=true&layout=compact"
-            alt="Top Languages"
-          />
+          <picture>
+            <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/karimgh2023/karimgh2023/output/top-langs-dark.svg" />
+            <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/karimgh2023/karimgh2023/output/top-langs-light.svg" />
+            <img src="https://raw.githubusercontent.com/karimgh2023/karimgh2023/output/top-langs-dark.svg" alt="Top Languages" />
+          </picture>
         </a>
       </td>
     </tr>
@@ -57,10 +59,11 @@ Bachelor's in Computer Systems Development from **ISET Mahdia**.
 
 <div align="center">
   <a href="https://github.com/karimgh2023">
-    <img
-      src="https://github-readme-streak-stats.herokuapp.com/?user=karimgh2023&theme=tokyonight&hide_border=true"
-      alt="GitHub Streak"
-    />
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/karimgh2023/karimgh2023/output/streak-dark.svg" />
+      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/karimgh2023/karimgh2023/output/streak-light.svg" />
+      <img src="https://raw.githubusercontent.com/karimgh2023/karimgh2023/output/streak-dark.svg" alt="GitHub Streak" />
+    </picture>
   </a>
 </div>
 
@@ -68,7 +71,10 @@ Bachelor's in Computer Systems Development from **ISET Mahdia**.
 
 ## Contribution Snake
 
-<!-- Replace src with your contribution snake GIF URL -->
 <p align="center">
-  <img src="" alt="Contribution Snake" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/karimgh2023/karimgh2023/output/github-contribution-grid-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/karimgh2023/karimgh2023/output/github-contribution-grid-snake.svg" />
+    <img src="https://raw.githubusercontent.com/karimgh2023/karimgh2023/output/github-contribution-grid-snake-dark.svg" alt="Contribution Snake" />
+  </picture>
 </p>
