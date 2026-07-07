@@ -4,6 +4,10 @@ on:
   schedule:
     - cron: "20 3 * * *"
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/streak.yml"
 
 jobs:
   build:
@@ -31,14 +35,14 @@ jobs:
         with:
           options: user=karimgh2023&theme=tokyonight&hide_border=true
           path: streak-dark.svg
-          token: ${{ secrets.PROFILE_README_TOKEN }}
+          token: ${{ secrets.METRICS_TOKEN }}
 
       - name: Generate streak card (light)
         uses: DenverCoder1/github-readme-streak-stats@main
         with:
           options: user=karimgh2023&theme=default&hide_border=true
           path: streak-light.svg
-          token: ${{ secrets.PROFILE_README_TOKEN }}
+          token: ${{ secrets.METRICS_TOKEN }}
 
       - name: Commit streak cards
         run: |

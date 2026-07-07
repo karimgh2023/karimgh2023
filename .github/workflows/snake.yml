@@ -1,0 +1,50 @@
+name: Generate contribution snake
+
+on:
+  schedule:
+    - cron: "40 3 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/snake.yml"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Prepare output branch
+        run: |
+          if git show-ref --verify --quiet refs/remotes/origin/output; then
+            git checkout output
+          else
+            git checkout --orphan output
+            git rm -rf . || true
+          fi
+
+      - name: Generate snake SVGs
+        uses: Platane/snk@v3
+        with:
+          github_user_name: karimgh2023
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+
+      - name: Commit snake SVGs
+        run: |
+          cp dist/github-contribution-grid-snake.svg .
+          cp dist/github-contribution-grid-snake-dark.svg .
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add github-contribution-grid-snake.svg github-contribution-grid-snake-dark.svg
+          git commit -m "chore: update contribution snake [skip ci]" || exit 0
+          git push origin output
